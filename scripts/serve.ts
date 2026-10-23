@@ -35,13 +35,13 @@ const server = Bun.serve({
 });
 
 if (!preview) {
-  let timer;
+  let timer: ReturnType<typeof setTimeout> | undefined;
   const rebuild = () => {
     clearTimeout(timer);
     timer = setTimeout(() => build().catch(console.error), 80);
   };
   watch(new URL("src/", project), { recursive: true }, rebuild);
-  watch(new URL("./service-worker.js", import.meta.url), rebuild);
+  watch(new URL("./service-worker.ts", import.meta.url), rebuild);
 }
 console.log(
   `${server.url} · ${preview ? "preview" : "edit src/, then refresh"}`,

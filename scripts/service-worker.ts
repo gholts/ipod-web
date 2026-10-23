@@ -1,3 +1,9 @@
+/// <reference lib="webworker" />
+
+declare const self: ServiceWorkerGlobalScope;
+declare const __BUILD_VERSION__: string;
+declare const __PRECACHE_FILES__: string[];
+
 const VERSION = __BUILD_VERSION__;
 const FILES = __PRECACHE_FILES__;
 const PREFIX = `ipod:${self.registration.scope}:`;

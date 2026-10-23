@@ -3,11 +3,11 @@
 US/JP catalogs and interface languages. Switching regions stops playback;
 device settings stay shared.
 
-Native browser modules. Bun builds `dist/`; GitHub Pages deploys from `main`.
+TypeScript source. Bun checks types and builds `dist/`; GitHub Pages deploys from `main`.
 
-- `src/app.js`, `src/style.css` — page and region buttons.
+- `src/app.ts`, `src/style.css` — page and region buttons.
 - `src/data/`, `src/locales/`, `src/assets/` — catalogs, labels, media.
-- `src/vendor/ipod.js` — adapted Apple component.
+- `src/vendor/` — typed device logic, component views, and rendering runtime.
 - `scripts/` — server, build, offline worker.
 
 Menus, settings, and Brick work offline. Reloading offline requires an initial
@@ -25,8 +25,8 @@ Extracted 2026-10-23 from Apple Music:
 Code, assets, and catalogs come from Apple. No redistribution license was
 included; this project grants no new rights to that material.
 
-Local changes to `src/vendor/ipod.js`:
+Local changes:
 
-- Local catalogs via `data.js`; media moved to `src/assets/`.
-- `allowPreview` / `playbackAllowed`: offline gate only for song playback.
-- `Lt`: dismiss gate and return; `resetOfflineScreen`: reset on region switch.
+- Local catalogs via `data.ts`; media moved to `src/assets/`.
+- Offline gate only for song playback; MENU returns to browsing.
+- Named modules and typed component boundaries.

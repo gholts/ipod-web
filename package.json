@@ -3,8 +3,11 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "bun scripts/serve.js",
-    "build": "bun scripts/build.js",
-    "preview": "bun scripts/serve.js --preview"
+    "dev": "bun scripts/serve.ts",
+    "build": "bun check && bun scripts/build.ts",
+    "preview": "bun scripts/serve.ts --preview"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
   }
 }
