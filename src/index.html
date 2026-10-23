@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPod</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="region" role="group" aria-label="Region">
+        <button type="button" data-region="us" aria-pressed="true" disabled>
+          US
+        </button>
+        <button type="button" data-region="jp" aria-pressed="false" disabled>
+          JP
+        </button>
+      </div>
+      <div id="simulator"></div>
+      <p id="error" role="alert" hidden></p>
+    </main>
+  </body>
+</html>

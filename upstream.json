@@ -1,0 +1,21 @@
+{
+  "extracted": "2026-10-23",
+  "sources": {
+    "https://music.apple.com/includes/ipod/data/us/en-US.json": {
+      "sha256": "575c3024e4fba354f2a9390a2195100bebbbeb21d9e051ecd814158155e4a6b5",
+      "bytes": 536507
+    },
+    "https://music.apple.com/includes/ipod/web-music-ipod.esm.js": {
+      "sha256": "0cf574f5e562ffa9b8ab147e83e3f5c26532694bf6ef5f81d7a8e0a02c0f436e",
+      "bytes": 334809
+    },
+    "https://music.apple.com/includes/ipod/data/jp/ja.json": {
+      "sha256": "72bb14c02a2bf217195a614a7c4ef7cc14fc4af6d4631e6f93efa579b171832b",
+      "bytes": 560192
+    },
+    "https://music.apple.com/assets/translations~b59d73a3bd.js": {
+      "sha256": "1854661f27531e2f5a3f895923c88bbb07b4837d3aaca57a1eaa2b5640d235eb",
+      "bytes": 96927
+    }
+  }
+}
